@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinsae</title>
+   
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="script.js" defer></script>
+    <style>
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none; /* Remove list dots */
+            padding: 0;
+        }
+        ul li {
+            background: #ecf0f1;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .user-interface {
+            margin-top: 30px;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .user-interface:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .user-interface img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+    <li class="nav__item"><a href="#footer" class="nav__link">Footer</a></li>
+
+    </ul>
+    </div>
+    <div class="container">
+        <h1>Student Management System</h1>
+        <p>This system helps manage students, teachers, and parents efficiently with various features.</p>
+        
+        <h2>Key Functionalities</h2>
+        <ul>
+            <li>Student, Teacher, and Parent Registration</li>
+            <li>Chat System for Students, Teachers, and Parents</li>
+            <li>Student Attendance Management</li>
+            <li>Exam and Grade Management</li>
+            <li>Profile Management</li>
+            <li>Admin Control Panel</li>
+        </ul>
+        <img src="index.png" alt="Teacher Interface">
+        <h2>Built-in Technologies</h2>
+        <ul>
+            <li><strong>Backend:</strong> Java Servlet, JSP</li>
+            <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Database:</strong> MySQL (if applicable)</li>
+        </ul>
+        
+        <h2>User Interfaces</h2>
+        <div class="user-interface">
+            <h3>Student Interface</h3>
+            <p>Students can view their profiles, check attendance, chat with teachers and parents, and access exam results.</p>
+            <img src="student.png" alt="Student Interface">
+        </div>
+        <div class="user-interface">
+            <h3>Teacher Interface</h3>
+            <p>Teachers can manage student records, mark attendance, assign grades, and communicate with students and parents.</p>
+            <img src="teacher.png" alt="Teacher Interface">
+        </div>
+        <div class="user-interface">
+            <h3>Parent Interface</h3>
+            <p>Parents can monitor their child's performance, attendance, and communicate with teachers.</p>
+            <img src="parents.png" alt="Parent Interface">
+        </div>
+        <div class="user-interface">
+            <h3>Admin Interface</h3>
+            <p>Admins can manage users, oversee the system, and configure settings.</p>
+            <img src="admin.png" alt="Admin Interface">
+        </div>
+    </div>
+
+    <footer id ="footer">
+        <p>&copy; 2025 Tinsae a. All Rights Reserved.</p>
+        <p><a href="#">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

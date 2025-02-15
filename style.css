@@ -1,0 +1,119 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header and Navigation */
+.l-header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__menu {
+  display: flex;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin: 0 15px;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.nav__link:hover,
+.nav__link.active {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Toggle Button */
+.nav__toggle {
+  display: none; /* Hide for larger screens */
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 16px; /* Space between images */
+  padding: 20px;
+  max-width: 1000px; /* Adjusted for 2-column layout */
+  margin: 0 auto;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav__menu {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+  }
+
+  .nav__toggle {
+    display: block; /* Show toggle button on small screens */
+    cursor: pointer;
+  }
+
+  .nav__toggle i {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .nav__menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr; /* Stack images in one column on small screens */
+  }
+}
